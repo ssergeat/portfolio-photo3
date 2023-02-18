@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "eslint": "^8.34.0"
+  },
+
+
+  "script":       {
+  "start":"http-server",
+  "dev" :"http-server",     
+  "lint":"eslint*.js"
+  }
+}
+
+  

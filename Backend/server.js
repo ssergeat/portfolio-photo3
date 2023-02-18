@@ -46,3 +46,6 @@ server.on('listening', () => {
 
 server.listen(port);
 
+fetch (" url: http://localhost: 5678/api/works/");
+
+
