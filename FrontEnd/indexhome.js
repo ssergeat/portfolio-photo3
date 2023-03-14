@@ -1,3 +1,4 @@
+const { filter } = require("lodash");
 
 
 const galery = document.getElementById("gallery");
@@ -210,4 +211,19 @@ fetch(url)
               const currentDiv = document.getElementById("div3");
               document.body.insertBefore(newDiv, currentDiv);
             }
-            
+  //création des catégories//    
+           
+const filters=["Tous","Objets","Appartements","Hôtels & Restaurants"];
+  
+//Récupération de l'élément grâce à Queryselector//
+const filterContainer= document.querySelector ("#filters");
+
+//création des filtres//
+filters.forEach(filter=>) 
+{
+  const btn = document.createElement ("button");
+  btn.textContent = filter;
+  btn.style.backgroundColor= "white";
+  btn.style.color="#1D6164";
+}
+
