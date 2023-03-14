@@ -175,32 +175,39 @@ fetch(url)
           ]
 
           // ajout des noms  de filtres//
+
           [
             function addElement() {
-              const buttonTous = document.createElement("buttonTous");
+              const newDiv = document.createElement("div");
               const newContent = document.createTextNode("Tous");
               newDiv.appendChild(newContent);
               const currentDiv = document.getElementById("div-tous");
               document.body.insertBefore(newDiv, currentDiv);
             }
-          ]
-          [
-            function addElement() {
+          
+           function addElement() {
               const newDiv = document.createElement("div");
-              const newContent = document.createTextNode("Appartements");
+              const newContent = document.createTextNode("Objets");
               newDiv.appendChild(newContent);
               const currentDiv = document.getElementById("div2");
               document.body.insertBefore(newDiv, currentDiv);
             }
-          ]
-          [
+        
+        
             function addElement() {
               const newDiv = document.createElement("div");
-              const newContent = document.createTextNode("HôtelS & Restaurants");
+              const newContent = document.createTextNode("Appartements");
               newDiv.appendChild(newContent);
               const currentDiv = document.getElementById("div3");
               document.body.insertBefore(newDiv, currentDiv);
             }
-          ]
-          [
           
+          
+            function addElement() {
+              const newDiv = document.createElement("div");
+              const newContent = document.createTextNode("HôtelS & Restaurants");
+              newDiv.appendChild(newContent);
+              const currentDiv = document.getElementById("div4");
+              document.body.insertBefore(newDiv, currentDiv);
+            }
+            
