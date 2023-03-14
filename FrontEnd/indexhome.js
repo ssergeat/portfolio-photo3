@@ -189,7 +189,7 @@ fetch(url)
               const newDiv = document.createElement("div");
               const newContent = document.createTextNode("Objets");
               newDiv.appendChild(newContent);
-              const currentDiv = document.getElementById("div2");
+              const currentDiv = document.getElementById("div1");
               document.body.insertBefore(newDiv, currentDiv);
             }
         
@@ -198,7 +198,7 @@ fetch(url)
               const newDiv = document.createElement("div");
               const newContent = document.createTextNode("Appartements");
               newDiv.appendChild(newContent);
-              const currentDiv = document.getElementById("div3");
+              const currentDiv = document.getElementById("div2");
               document.body.insertBefore(newDiv, currentDiv);
             }
           
@@ -207,7 +207,7 @@ fetch(url)
               const newDiv = document.createElement("div");
               const newContent = document.createTextNode("HôtelS & Restaurants");
               newDiv.appendChild(newContent);
-              const currentDiv = document.getElementById("div4");
+              const currentDiv = document.getElementById("div3");
               document.body.insertBefore(newDiv, currentDiv);
             }
             
