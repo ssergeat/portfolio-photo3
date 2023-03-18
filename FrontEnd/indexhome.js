@@ -1,4 +1,3 @@
-const { filter } = require("lodash");
 
 
 const galery = document.getElementById("gallery");
@@ -74,7 +73,7 @@ fetch(url)
             }
           
           
-            function addElement(Hôtels & Restaurants,div3) {
+            function addElement(Hôtels et Restaurants,div3) {
               const newDiv = document.createElement("div");
               const newContent = document.createTextNode("Hôtels & Restaurants");
               newDiv.appendChild(newContent);
@@ -96,6 +95,19 @@ filters.forEach(filter=>
   btn.style.backgroundColor= "white";
   btn.style.color="#1D6164";
 });
+// Créer un bouton
+const btn = document.createElement('button');
+btn.textContent = 'tous';
+
+// Ajouter un écouteur d'événements au clic du bouton
+btn.addEventListener('click', function() {
+  console.log('tous');
+});
+
+// Ajouter le bouton à un élément parent
+document.body.appendChild(div-tous);
+
+// Ajouter des propriétés supplémentaires au bouton, par exemple des classes ou des attributs
 
 
 
