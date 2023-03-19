@@ -28,6 +28,9 @@ fetch(url)
 }
   );
 
+  
+
+
       //récupération des catégories:3//
 
        url = 'http://localhost:5678/api/categories';
@@ -73,7 +76,7 @@ fetch(url)
             }
           
           
-            function addElement(Hôtels et Restaurants,div3) {
+            function addElement(Hôtels,div3) {
               const newDiv = document.createElement("div");
               const newContent = document.createTextNode("Hôtels & Restaurants");
               newDiv.appendChild(newContent);
@@ -85,29 +88,24 @@ fetch(url)
 const filters=["Tous","Objets","Appartements","Hôtels & Restaurants"];
   
 //Récupération de l'élément grâce à Queryselector//
-const filterContainer= document.querySelector ("#filters");
+console.log (document.querySelector ("#filters"));
 
-//création des filtres//
-filters.forEach(filter=> 
-{
-  const btn = document.createElement ("button");
-  btn.textContent = filter;
-  btn.style.backgroundColor= "white";
-  btn.style.color="#1D6164";
-});
-// Créer un bouton
-const btn = document.createElement('button');
-btn.textContent = 'tous';
+// @param{PointerEvent} event//
 
-// Ajouter un écouteur d'événements au clic du bouton
-btn.addEventListener('click', function() {
-  console.log('tous');
-});
+function onButtonClick(event){
+  console.log(event.currentTarget)
+}
 
-// Ajouter le bouton à un élément parent
-document.body.appendChild(div-tous);
+document.querySelectorAll(('button').forEach(button=>){
+button.addEventListener('click,' onButtonClick )
+}
 
-// Ajouter des propriétés supplémentaires au bouton, par exemple des classes ou des attributs
+
+
+
+  
+
+
 
 
 

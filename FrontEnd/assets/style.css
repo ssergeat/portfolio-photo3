@@ -187,7 +187,38 @@ footer nav ul {
 }
 /*---bouton filtres catégories---*/
 
-
-
-
+#filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 15px;
+	margin-bottom: 50px;
+  }
+#div-tous,#div1,#div2,#div3,#div4{
+height: 37px;
+background-color: white;
+border: 1px solid #1d6154;
+border-radius: 60px;
+color: #1d6154;
+cursor: pointer;
+width: auto;
+box-sizing: border-box;
+padding: 0 18px;
+font-family: 'Syne';
+font-size: 16px;
+font-weight: 700;
+line-height: 19px;
+text-align: center;
+font-style: normal;
+text-decoration:none;
 }
+#div-tous,#div1,#div2,#div3,#div4:hover{
+	background: #1d6154;
+  color: white;
+}
+.button:hover{
+	background-color: #1D6154;
+}
+
+
+
