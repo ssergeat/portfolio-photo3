@@ -27,7 +27,20 @@ fetch(url)
   );
 }
   );
-
+// Fonction pour afficher tous les projets
+function tout() {
+  fetch("http://localhost:5678/api/works").then((res) => {
+    if (res.ok) {
+      res.json().then((data) => {
+        console.log(data); // Affichage des données dans la console
+        document.querySelector(".gallery").innerHTML = ""; // Effacement de l'élément HTML avec la classe .gallery
+        // Boucle pour afficher tous les projets
+        for (let i = 0; i <= data.length - 1; i++) {
+          info(data[i]); // Appel de la fonction info pour afficher les informations sur chaque projet
+        }
+      });
+    }
+  });
   
 
 
@@ -46,6 +59,10 @@ fetch(url)
           );
         }
         );
+
+        
+         
+           {
 
           // ajout des noms  de filtres//
 
@@ -85,7 +102,7 @@ fetch(url)
             }
   //création des catégories//    
            
-const filters=["Tous","Objets","Appartements","Hôtels & Restaurants"];
+const catégorieid=["Tous","Objets","Appartements","Hôtels & Restaurants"];
   
 //Récupération de l'élément grâce à Queryselector//
 console.log (document.querySelector ("#filters"));
@@ -97,15 +114,60 @@ function onButtonClick(event){
 }
 
 document.querySelectorAll(('button').forEach(button=>){
-button.addEventListener('click,' onButtonClick )
-}
+button.addEventListener('click,' onButtonClick )}
+);
 
+let TousSet=new Set();
+TousSet add({catégorieid1,catégorieid2,catétegorieid3});
 
+let ObjetsSet=new Set();
+ObjetsSet add(catégorieid1);
 
+let AppartementsSet=new Set();
+AppartementsSet add (catégorieid2);
 
+let Hôtels & RestaurantsSet= new Set();
+Hôtels & RestaurantsSet add (catégorieid3);
+           }
+          }
+// Fonction pour afficher tous les projets
+function tout() {
+  fetch("http://localhost:5678/api/works").then((res) => {
+    if (res.ok) {
+      res.json().then((data) => {
+        console.log(data); // Affichage des données dans la console
+        document.querySelector(".gallery").innerHTML = ""; // Effacement de l'élément HTML avec la classe .gallery
+        // Boucle pour afficher tous les projets
+        for (let i = 0; i <= data.length - 1; i++) {
+          info(data[i]); // Appel de la fonction info pour afficher les informations sur chaque projet
+        }
+      });
+    }
+  });
+  var feature={all works}
   
+  var extract = feature.works.filter(function(el){
+    return el.catégorieid=catégorieid1;
+});
+console.log(extract);
 
+var extract = feature.works.filter(function(el){
+  return el.catégorieid=catégorieid2;
+});
 
+console.log(extract);
+var extract = feature.works.filter(function(el){
+  return el.catégorieid=catégorieid3;
+});
 
+console.log(extract);  url = 'http://localhost:5678/api/categories';
 
-
+fetch(url)
+  .then((resp) => resp.json())
+  .then(function (data) {
+    let work = data;
+    return work.map(function (work) {
+      console.log(work);
+      for (let i = 0; i <= data.length - 1; i++) {
+        info(data[i]);}
+        
